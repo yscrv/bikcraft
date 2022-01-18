@@ -10,6 +10,13 @@
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
-@import "./home/seguros.css";
 @import "./home/footer.css";
+
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
+
 @import "./bicicletas/bicicletas-lista.css";
+@import "./bicicletas/bicicletas.css";
+
+@import "./termos/termos.css";
