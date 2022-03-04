@@ -1,5 +1,6 @@
 .vantagens-bg {
-  background-color: var(--cor-12);
+  background: var(--cor-12) url("../../img/dec/top-right.svg") no-repeat bottom
+    40px right 40px;
 }
 .vantagens {
   padding-top: 120px;

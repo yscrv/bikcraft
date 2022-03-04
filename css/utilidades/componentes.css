@@ -76,7 +76,8 @@
 
 /* titulos internos*/
 .titulo-bg {
-  background-color: var(--cor-11);
+  background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top
+    60px right 20px;
   padding-top: 60px;
   padding-bottom: 60px;
 }

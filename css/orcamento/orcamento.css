@@ -29,7 +29,8 @@
 }
 
 .orcamento-produto {
-  background: var(--cor-12);
+  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 30px left 40px;
   border-radius: 5px 0 0 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -99,7 +100,8 @@
 }
 
 .orcamento-dados {
-  background: var(--cor-0);
+  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 30px right 40px;
   border-radius: 0 5px 5px 0;
 }
 
@@ -114,4 +116,55 @@
 #seguro:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
+}
+
+.orcamento-detalhes {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 20px;
+  background-color: var(--cor-0);
+  align-items: center;
+  border-radius: 4px;
+}
+
+.orcamento-detalhes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.orcamento-detalhes li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label + .orcamento-detalhes {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+  }
+  .orcamento-produto {
+    border-radius: 5px 5px 0 0;
+    background: var(--cor-12);
+  }
+  .orcamento-dados {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+  }
 }
